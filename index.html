@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/permissaoColagem.js"></script>
+
+	<style type="text/css">
+		#textA{
+			width: 300px;
+			height: 200px;
+			resize:none;
+		}
+		body { font-size: 62.5%; }
+		label, input { display:block; }
+		input.text { margin-bottom:12px; width:95%; padding: .4em; }
+		fieldset { padding:0; border:0; margin-top:25px; }
+		.validateTips { border: 1px solid transparent; padding: 0.3em; }
+	</style>
+
+
+</head>
+<body>
+
+	<textarea id="textA" ></textarea>
+	<!-- Botão da ação -->
+	<p><button id="btColar">Colar</button></p>
+
+
+	<!--Form de validação  -->
+	<div id="dialog-form" title="Validação de usuário">
+		<p class="validateTips" id="validateTips"></p>
+
+		<form id="formValidaUser">
+			<fieldset>
+				<label for="name">Usuário</label>
+				<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">
+				<label for="password">Senha</label>
+				<input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all">
+			</fieldset>
+		</form>
+	</div>
+	<!-- Fim do form -->
+
+</body>
+</html>
